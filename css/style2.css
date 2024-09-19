@@ -1,0 +1,58 @@
+.contenedor{ /*padre */
+    background-color: rgb(220, 43, 226);
+    padding: 10px; 
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 7fr 1fr 1fr;
+    grid-template-areas:"header header header"
+                        "nav    nav    nav"
+                        "section1 section2 ads"
+                        "foot foot foot"
+                        "rrss1 rrss2 rrss3"
+                        ;
+
+}
+.contenedor .header{
+    background-color: rgb(243, 126, 237);
+    grid-column: header;
+}
+.contenedor .nav{
+    background-color: rgb(5, 85, 85);
+    grid-column: nav;
+}
+.contenedor .section1{
+    background-color: rgb(9, 255, 255);
+    grid-column: section1;
+}
+.contenedor .section2{
+    background-color: rgb(9, 255, 255);
+    grid-column: section2;
+}
+.contenedor .ads{
+    background-color: rgb(240, 255, 255);
+    grid-column: ads;
+    
+}
+.contenedor .ads .hijoads{
+    background-color: rgb(86, 158, 158);
+    grid-column: ads;
+    width: 100px;
+    height:100px;
+    margin: 20px;
+}
+.contenedor .rrss1{
+    background-color: rgb(230, 130, 84);
+    grid-column: rrss1;
+}
+.contenedor .rrss2{
+    background-color: rgb(230, 130, 84);
+    grid-column: rrss2;
+}
+.contenedor .rrss3{
+    background-color: rgb(230, 130, 84);
+    grid-column: rrss3;
+}
+/* es la manera correcta de maquetacion */
